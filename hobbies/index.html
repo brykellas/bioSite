@@ -14,50 +14,67 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="default-style.css" type="text/css">
+    <link rel="stylesheet" href="../default-style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
     <header>
-        <h1>About Guy Jent</h1>
+        <h1>Guy's Hobbies</h1>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="./index.html">About</a>
+            <a href="../about/index.html">About</a>
             <a class="current" href="../hobbies/index.html">Hobbies</a>
         </nav>
     </header>
 
     <div id="container">
         <div id="left">
-            <figure>
-                <img src="../images/guy-paintball.jpg" alt="Paintball">
-                <figcaption>Guy playing paintball.</figcaption>
-            </figure>
-            <p>
-                Text about guy playing paintball
-            </p>
+            <div class="card">
+                <figure>
+                    <img src="../images/guy-paintball.jpg" alt="Paintball">
+                    <!-- <figcaption>Guy playing paintball.</figcaption> -->
+                </figure>
+                <div class="card-body">
+                    <p>
+                        Originally only playing as a pastime, Guy now plays paintball on a semi-competitive basis. 
+                        Every Sunday Guy meets with his team to practice before participating in an invitational 
+                        or tournament match.
+                    </p>
+                </div> <!-- card-body -->
+            </div> <!-- card -->
         </div>
 
         <div id="middle">
-            <figure>
-                <img src="../images/work.jpg" alt="Distribution Center">
-                <figcaption>A reach truck handling materials at a distribution center</figcaption>
-            </figure>
-            <p>
-                Text about guy woking inventory control and learning supply chain management
-            </p>
-        </div>
+            <div class="card">
+                <figure>
+                    <img src="../images/work.jpg" alt="Distribution Center">
+                    <!-- <figcaption>A reach truck handling materials at a distribution center</figcaption> -->
+                </figure>
+                <div class="card-body">
+                    <p>
+                        Working as an Operations Manager of Inventory Control, Guy aspires to open his own business 
+                        as a Supply Chain Consultant. 
+                    </p>
+                </div> <!-- card-body -->
+            </div> <!-- card -->          
+        </div> <!-- middle-->
 
         <div id="right">
-            <figure>
-                <img src="../images/guy-and-ryan.jpg" alt="Guy and Ryan">
-                <figcaption>Guy with his son, Ryan.</figcaption>
-            </figure>
-            <p>
-                Text about guy spending time playing with the kids
-            </p>
-        </div>
-    </div>
+            <div class="card">
+                <figure>
+                    <img src="../images/guy-and-ryan.jpg" alt="Guy and Ryan">
+                    <!-- <figcaption>Guy with his son, Ryan.</figcaption> -->
+                </figure>
+                <div class="card-body">
+                    <p>
+                        Guy enjoys spending time with his family whether it's at home or out about town. Just about 
+                        every trip that he plans involves his family. Guy wants his family to have plenty of memories 
+                        and experiences throughout their lives.
+                    </p>
+                </div> <!-- card-body -->
+            </div> <!-- card --> 
+        </div> <!-- middle -->
+    </div> <!-- container -->
 
     <footer>
         <p>Created by Bryce Kellas for bioSite project at Bellevue University</p> 
