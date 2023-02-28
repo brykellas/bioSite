@@ -132,7 +132,7 @@ nav a:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 0;
     text-align: left;
-    background-color: #96921B;
+    background-color: #212930;
 }
 .card-landing {
     margin-left: auto;
@@ -142,7 +142,7 @@ nav a:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 16px 16px;
     text-align: left;
-    background-color: #96921B;
+    background-color: #212930;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -195,7 +195,7 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 0;
     text-align: left;
-    background-color: #96921B;
+    background-color: #212930;
 }
 
 footer {
