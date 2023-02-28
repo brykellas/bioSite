@@ -6,60 +6,63 @@
  */
 
 body{
-    margin: 0;
     background-color: #69BE28;
     font-family: "Hind Madurai",Verdana,sans-serif;
+    margin: 0;
     padding-bottom: 2.5em;
 } 
 header {
     background-color: #002244;
     color: white;
-    margin: 0;
-    line-height: 55px;
     height: 55px;
+    line-height: 55px;
+    margin: 0;
     width: 100%;
 }
 h1, h2 {
-    font-weight: 600;
     color: white;
+    font-weight: 600;
 }
 .landing-header {
-    width: 85%;
     margin: 0 auto;
+    width: 85%;
 }
 .landing-header h1 {
-    margin: 0;
-    width: auto;
-    text-align: center;
     line-height: inherit;
+    margin: 0;
+    text-align: center;
+    width: auto;
 }
 .site-header {
-    width: 85%;
     margin: 0 auto;
+    width: 85%;
 }
 .site-header h1 {
-    margin: 0;
     float: left;
-    width: auto;
-    text-align: center;
     line-height: inherit;
+    margin: 0;
+    text-align: center;
+    width: auto;
 }
 
 .page-header {
     border: 0;
-    border-top: 7px;
-    border-bottom: 7px;
-    border-radius: 90px;
-    border-style: solid;
+    /* border-top: 7px; */
+    border-bottom: 6px;
     border-color: #002244;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    background-color: #69BE28;
-    margin: 20px auto;
-    width: 420px;
+    border-radius: 20px;
+    border-style: double;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4); */
+    /* background-color: #69BE28; */
     height: 45px;
     line-height: 50%;
+    margin: 20px auto;
+    max-width: 420px;
+    min-width: fit-content;
+    padding-top: 1px;
     text-align: center;
     top: 20px;
+    width: 90%;
 }
 .page-header h2 {
     text-align: center;
@@ -70,83 +73,91 @@ p {
 }
 
 nav {
-    line-height: inherit;
-    width: 220px;
     float: right;
+    line-height: inherit;
     text-align: center;
+    width: 220px;
 }
 nav a {
+    color: white;
+    display:inline-block;
     font-weight: 500;
     text-decoration-line: none;
-    display:inline-block;
     width: 70px;
-    color: white;
 }
 nav a:hover {
     background-color: #001931;
 }
 .navbar-landing {
-    color: white;
-    text-align: center;
-    margin: 16px 0;
-    width: auto;
-    line-height: 2em;
     background-color: #939160;
+    color: white;
+    line-height: 2em;
+    margin: 16px 0;
+    text-align: center;
+    width: auto;
 }
 .navbar-landing a {
-    text-decoration-line: none;
     color: white;
+    display: block;
+    text-decoration-line: none;
+}
+.navbar-landing a:hover {
+    background-color: #C2BA39;
+    font-weight: 500;
 }
 .image-landing {
-    margin: 0;
+    clear: both;
     margin-left: auto;
     margin-right: auto;
-    clear: both;
+    margin: 0;
     width: 400px;
 }
 .image-landing figure { 
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin: 0;
 }
 .image-landing figure img {
-    width: 294px;
     height: 184px; 
     object-fit: cover;
     object-position: center;
+    width: 294px;
 }
 
 #container {
     background-color: #A5ACAF;
-    min-height: 100vh;
     margin: 0 auto;
+    max-width: 960px;
+    min-height: 100vh;
     padding-top: 1px; /* Fix Margin Collapse with .page-header */
-    width: 960px;
+    width: 75%;
+    min-width: fit-content;
 }
 
 #left, #middle, #right {
     float: left;
+    max-width: 300px;
     width: 33%;
 }
 .card {
+    background-color: #212930;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: auto;
     margin-left: 16px;
     margin-right: 16px;
-    width: auto;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 0;
     text-align: left;
-    background-color: #212930;
+    width: auto;
 }
 .card-landing {
+    background-color: #212930;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 294px;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 16px 16px;
     text-align: left;
-    background-color: #212930;
+    width: 294px;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -155,13 +166,13 @@ nav a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .card figure {
-    width: 284;
-    height: 300px;
+    height: 100%;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .card-body {
-    height: 150px;
+    height: max-content;
     padding: 8px
 }
 .card-body p {
@@ -169,53 +180,63 @@ nav a:hover {
 }
 
 img {
-    width: inherit;
-    height: inherit;
+    height: 100%;
     object-fit: cover;
+    width: 100%;
 }
+
 .bio-figure {
     float: left;
+    height: 100%;
     margin: 0px;
+    margin-right: 8px;
+    width: 33%;
+    min-width: 150px;
+    max-width: 300px;
 } 
-.bio-card-body {
-    float: right;
-    height: 400px;
-    width: 67%;   
+.bio-card-body { 
+    display: block;
+    height: 100%;
+    padding: 8px;
+    /* width: 67%; */  
+
 }
 .bio-card-body article{
-    width: 95%;  
-    margin: auto; 
+    height: 100%;
+    width: 100%;  
+
 }
 .bio-figure img {
-    height: 400px;
-    width: 300px;
+    height: 100%;
     object-fit: contain;
+    width: 100%;
 }
 .bio-card {
+    background-color: #212930;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
-    height: 400px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 0;
     text-align: left;
-    background-color: #212930;
+    width: 95%;
+    max-width: 893px;
 }
 
 footer {
-    margin-top: auto;
     background-color: #002244;
-    color: white;
     clear: both;
-    position: absolute;
+    color: white;
     display: block;
-    width: 100%;
     height: auto;
+    margin-top: auto;
     padding: 30px 0;
+    position: absolute;
+    width: 100%;
 }
 footer p {
-    margin: 0;
-    width: 100%;
     height: auto;
+    margin: 0;
     text-align: center;
+    width: 100%;
 }
