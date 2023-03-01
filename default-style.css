@@ -5,6 +5,7 @@
     Default Stylesheet for bioSite Project
  */
 
+/* Desktop */
 body{
     background-color: #69BE28;
     font-family: "Hind Madurai",Verdana,sans-serif;
@@ -239,4 +240,54 @@ footer p {
     margin: 0;
     text-align: center;
     width: 100%;
+}
+
+/* Mobile, phones */
+@media only screen and (max-width: 768px) {
+    .site-header h1 {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    nav {
+        clear: both;
+        line-height: 2em;
+        width: 100%;
+    }
+    nav a {
+        background-color: #69BE28;
+        width: 30%;
+    }
+    #container {
+        background-color: #A5ACAF;
+        min-height: 100vh;
+        width: 75%;
+        min-width: fit-content;
+    }
+
+    .page-header {
+        margin-top: 2em;
+    }
+
+    #left, #middle, #right {
+        float: none;
+        margin: 0 auto;
+        max-width: 90%;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+    .card figure {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    footer {
+        display: inline-block;
+    }
 }
