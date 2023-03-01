@@ -111,7 +111,6 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     margin: 0;
-    width: 400px;
 }
 .image-landing figure { 
     margin-left: auto;
@@ -173,7 +172,7 @@ nav a:hover {
     width: 100%;
 }
 .card-body {
-    height: max-content;
+    height: 12.5em;
     padding: 8px
 }
 .card-body p {
@@ -265,6 +264,21 @@ footer p {
         width: 75%;
         min-width: fit-content;
     }
+    .image-landing figure {
+        height: 100%; 
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        
+        object-fit: cover;
+    }
+    .image-landing figure img {
+        height: 184px; 
+        object-fit: cover;
+        object-position: center;
+        width: 294px;
+    }
 
     .page-header {
         margin-top: 2em;
@@ -279,6 +293,9 @@ footer p {
     .card {
         width: 100%;
         margin: 0 0 16px 0;
+    }
+    .card-body {
+        height: max-content;
     }
     .card figure {
         height: 100%;
